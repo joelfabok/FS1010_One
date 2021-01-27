@@ -1,10 +1,10 @@
 body, html {
-    font-family: sans-serif;
-    background-color: #d5d5d5;
-    margin-left: 100px;
-    max-width: 1100px;
-    margin-left: auto;
-    margin-right: auto;
+  font-family: sans-serif;
+  background-color: #d5d5d5;
+  margin-left: 100px;
+  max-width: 1100px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 /*************************/
@@ -12,17 +12,17 @@ body, html {
 /*************************/
 
 .title b {
-    font-family: 'Open Sans', sans-serif;
-    font-weight: bold;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: bold;
 }
 .title {
-    font-weight: normal;
+  font-weight: normal;
 }
 
 
 .writeUp {
-    opacity: 60%;
-    font-weight: normal;
+  opacity: 60%;
+  font-weight: normal;
 }
 
 
@@ -32,63 +32,69 @@ body, html {
 
 
 .gallary {
-    width: 100%;
-    
+  width: 100%;
+  
 }
 
 .container {
-    display: inline-block;
-    position: relative;
-    width: 25%;
-    vertical-align: top;
-    
-  }
-  
-  .image {
-    display: block;
-    width: 100%;
-    margin-top: 5px;
-  }
-  
-  
-  
-  
-  .overlay .text{
-    opacity: 0;
-    position: absolute;
-    width: 100%;
-    height: 183px;
-    background: linear-gradient(to bottom right, #fff 0%, #fff 50%, transparent 50%, transparent 100%);
-    
-  }
-  .overlayone .text{
-    opacity: 0;
-    position: absolute;
-    width: 100%;
-    height: 414px;
-    background: linear-gradient(to bottom right, #fff 0%, #fff 50%, transparent 50%, transparent 100%);
-  }
-
-
-  .text p{
-    font-size: 12px;
-  }
-
-  .text{
-      padding-left: 10px;
-  }
-  
-  .image:hover .overlay .text {
-    opacity: .7;
-    transition: .5 ease;
-  }
-
-  .image:hover .overlayone .text {
-    opacity: .6;
-    transition: .5 ease;
-  }
+  display: inline-block;
+  position: relative;
+  width: 25%;
+  height: auto;
+  vertical-align: top;
 
   
+}
+
+.image {
+  display: block;
+  width: 100%;
+  margin-top: 5px;
+  position: relative;
+  z-index: 0;
+}
+
+
+.overlay .text{
+  opacity: 0;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  box-sizing: border-box;
+  background: linear-gradient(to bottom right, #fff 0%, #fff 50%, transparent 50%, transparent 100%);
+  
+}
+.overlayone .text{
+  opacity: 0;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  box-sizing: border-box;
+  background: linear-gradient(to bottom right, #fff 0%, #fff 50%, transparent 50%, transparent 100%);
+}
+
+
+.text p{
+  font-size: 12px;
+}
+
+.text{
+    padding-left: 10px;
+    height: 100%; 
+    z-index: 1;
+}
+
+.image:hover .overlay .text {
+  opacity: .7;
+  transition: .5 ease;
+}
+
+.image:hover .overlayone .text {
+  opacity: .6;
+  transition: .5 ease;
+}
+
+
 
 
 
@@ -100,22 +106,22 @@ body, html {
 
 
 .social {
-    list-style: none;
+  list-style: none;
 }
 
 .social a{
-    text-decoration: none;
-    color: black;
-    float: left;
-    padding: 10px;
-    -webkit-transition: -webkit-transform .8s ease-in-out;
-    transition: transform .8s ease-in-out;
+  text-decoration: none;
+  color: black;
+  float: left;
+  padding: 10px;
+  -webkit-transition: -webkit-transform .8s ease-in-out;
+  transition: transform .8s ease-in-out;
 }
 
 .social a:hover {
-    color: grey;
-    -webkit-transform: rotate(360deg);
-    transform: rotate(360deg);
+  color: grey;
+  -webkit-transform: rotate(360deg);
+  transform: rotate(360deg);
 }
 
 
