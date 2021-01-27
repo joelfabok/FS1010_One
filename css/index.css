@@ -1,12 +1,20 @@
 body, html {
   font-family: sans-serif;
   background-color: #d5d5d5;
-  margin-left: 100px;
+  
   max-width: 1100px;
   margin-left: auto;
   margin-right: auto;
 }
 
+
+
+@media screen and (max-width: 1500px) {
+  body{
+    margin-left: 50px;
+    
+  }
+}
 /*************************/
 /***** Header Titles *****/
 /*************************/
@@ -25,13 +33,40 @@ body, html {
   font-weight: normal;
 }
 
+@media screen and (min-width: 801px) {
+  .title{
+    font-size: 32px;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .title{
+    font-size: 22px;
+    
+  }
+}
+
+@media screen and (min-width: 801px) {
+  .writeUp{
+    font-size: 24px;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .writeUp{
+    font-size: 16px;
+    
+  }
+}
+
+
 
 /***************************/
 /********* Gallery *********/
 /***************************/
 
 
-.gallary {
+.gallery {
   width: 100%;
   
 }
@@ -73,15 +108,10 @@ body, html {
   background: linear-gradient(to bottom right, #fff 0%, #fff 50%, transparent 50%, transparent 100%);
 }
 
-
-.text p{
-  font-size: 12px;
-}
-
 .text{
-    padding-left: 10px;
-    height: 100%; 
-    z-index: 1;
+  padding-left: 10px;
+  height: 100%; 
+  z-index: 1;
 }
 
 .image:hover .overlay .text {
@@ -94,9 +124,42 @@ body, html {
   transition: .5 ease;
 }
 
+/********************************/
+/********* Gallery Text *********/
+/********************************/
 
 
 
+@media screen and (min-width: 801px) {
+  .text h5{
+    font-size: 12px;
+    
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .text h5 {
+    font-size: 8px;
+    margin-bottom: -3px;
+  }
+}
+
+
+.text p{
+  font-size: 12px;
+}
+@media screen and (min-width: 801px) {
+  .text p{
+    font-size: 12px;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .text p {
+    font-size: 6px;
+    
+  }
+}
 
 
 
@@ -125,4 +188,9 @@ body, html {
 }
 
 
-
+@media screen and (max-width: 800px) {
+  .social a{
+    font-size: 13px;
+    
+  }
+}
